@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" href="img/LOGO.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Productos - RecicladosTech</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="script/script.js" defer></script>
+</head>
+<body class="yellow-bg">
+    <header>
+        <nav>
+            <a href="Index.html">
+                <img src="img/LOGO.png" alt="Logo de RecicladosTech" class="logo">
+            </a>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="soporte.html">Soporte</a>
+            <a href="carrito.html">Carrito de Productos</a>
+            <a href="inicio-de-sesion.html">Iniciar Sesión</a>
+            <a href="donaciones.html">Donaciones</a>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+            <a href="datos.html">Datos de Dispositivos</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Carrito de Productos</h1>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="total">
+            <strong>Total de Productos: <span id="total-count">0</span></strong><BR> </div>
+        
+        <label for="shipping-location">Lugar de Envío:</label>
+        <input type="text" id="shipping-location" placeholder="Introduce tu dirección" required>
+        <button onclick="alertaco( )"><span class="cart-icon">🚚</span> Enviar</button>
+        <button onclick="vaciarCarrito()"><span class="cart-icon">🗑️</span> Vaciar Carrito</button><br>
+        <input type="button" onclick="desaparece()" value="Mostrar">
+        <input type="button" onclick="Canchelo()" value="Reset">
+    </div>
+
+    <div id="Tablita">
+        <table>
+        <thead>
+        <tr>
+         <th>Nombre</th> 
+         <th>Descripcion</th>
+         <th>Disponiblidad</th> 
+        </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+        <td>Lenovo Yoga 730</td>
+        <td>Muy bonito y moderno</td>
+        <td>55</td>
+         </tr>
+         <tr>
+            <td>Asus ZenBook UX330</td>
+            <td>Para trabajos va de marabilla</td>
+            <td>29</td>
+             </tr>
+             <tr>
+                <td>Acer Swift 3</td>
+                <td>Simpple y estetico</td>
+                <td>12</td>
+                 </tr>
+                 <tr>
+                    <td>MacBook Pro 2015</td>
+                    <td>Me lo encontre en la basura</td>
+                    <td>999</td>
+                     </tr>
+                 </tbody>
+        </table>
+        <input type="button"  id="adfklnadfjk" value="Sorpresa gratis" onclick="virus()" onmouseout="ddewd()" onmouseover="quueso()" >
+        </div>
+
+    <footer>
+        <p>&copy; 2024 RecicladosTech - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

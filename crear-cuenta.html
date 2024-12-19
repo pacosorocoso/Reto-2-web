@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" href="img/LOGO.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecicladosTech - Crear Cuenta</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="script/script.js" defer></script>
+</head>
+<body class="yellow-bg"> 
+    <header>
+        <nav>
+            <a href="Index.html">
+                <img src="img/LOGO.png" alt="Logo de RecicladosTech" class="logo">
+            </a>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="soporte.html">Soporte</a>
+            <a href="carrito.html">Carrito de Productos</a>
+            <a href="inicio-de-sesion.html">Iniciar Sesión</a>
+            <a href="donaciones.html">Donaciones</a>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+            <a href="datos.html">Datos de Dispositivos</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Crear Cuenta</h2>
+        <form onsubmit="crearCuenta(event)">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required class="input-field">
+        
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required class="input-field">
+        
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required class="input-field">
+        
+            <!-- Botón con eventos para cambiar el texto -->
+            <input type="submit" 
+                   value="Crear Cuenta" 
+                   class="submit-button" 
+                   onmouseover="cambiarTextos(this, 'Click aquí')" 
+                   onmouseout="restaurarTextos(this, 'Crear Cuenta')">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 RecicladosTech - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+

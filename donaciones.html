@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Icono de la página en la pestaña del navegador -->
+    <link rel="icon" type="image/png" href="img/LOGO.png">
+    
+    <!-- Codificación de caracteres para soporte de caracteres especiales -->
+    <meta charset="UTF-8">
+    
+    <!-- Configuración para que la página sea responsive en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Donaciones de Dispositivos - RecicladosTech</title>
+    
+    <!-- Enlace al archivo CSS para estilos personalizados -->
+    <link rel="stylesheet" href="css/css.css">
+    <script src="script/script.js"></script>
+</head>
+<body class="yellow-bg"> 
+    <!-- Encabezado de la página con barra de navegación -->
+    <header>
+        <nav>
+            <a href="Index.html">
+                <img src="img/LOGO.png" alt="Logo de RecicladosTech" class="logo">
+            </a>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="soporte.html">Soporte</a>
+            <a href="carrito.html">Carrito de Productos</a>
+            <a href="inicio-de-sesion.html">Iniciar Sesión</a>
+            <a href="donaciones.html">Donaciones</a>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+            <a href="datos.html">Datos de Dispositivos</a>
+        </nav>
+    </header>
+    
+    <!-- Contenedor principal para las secciones de donaciones -->
+    <div class="container">
+        <!-- Título para la sección de donaciones -->
+        <h2>Donaciones de Dispositivos</h2>
+        
+        <div class="form-container">
+            <!-- Formulario para enviar donaciones de dispositivos -->
+            <form action="#" method="post">
+                <!-- Campo para el nombre completo del donante -->
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" required class="input-field">
+
+                <!-- Campo para el correo electrónico del donante -->
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required class="input-field">
+
+                <!-- Campo para el tipo de dispositivo a donar -->
+                <label for="device">Dispositivo a Donar:</label>
+                <input type="text" id="device" name="device" required class="input-field">
+
+                <!-- Campo para la descripción del dispositivo -->
+                <label for="description">Descripción del Dispositivo:</label>
+                <textarea id="description" name="description" rows="5" required class="input-field"></textarea>
+
+                <!-- Campo para las condiciones del dispositivo -->
+                <label for="condition">Condiciones del Dispositivo:</label>
+                <input type="text" id="condition" name="condition" required class="input-field">
+
+                <!-- Campo para la dirección de recogida del dispositivo -->
+                <label for="address">Dirección de Recogida:</label>
+                <input type="text" id="address" name="address" required class="input-field">
+
+                <!-- Botón para enviar el formulario de donación -->
+                <input type="button" value="Enviar Donación" onclick="mesajo()">
+                <p id="carlitos"></p>
+                
+            </form>
+        </div>
+
+        <!-- Título para la sección de solicitud de dispositivos -->
+        <h1>Solicitar Dispositivos</h1>
+        <div class="form-container">
+            <!-- Formulario para solicitar dispositivos -->
+            <form action="#" method="post">
+                <!-- Campo para el nombre completo del solicitante -->
+                <label for="solicitante-name">Nombre Completo:</label>
+                <input type="text" id="solicitante-name" name="name" required class="input-field">
+
+                <!-- Campo para el correo electrónico del solicitante -->
+                <label for="solicitante-email">Correo Electrónico:</label>
+                <input type="email" id="solicitante-email" name="email" required class="input-field">
+
+                <!-- Campo para el dispositivo solicitado -->
+                <label for="solicitante-device">Dispositivo Solicitado:</label>
+                <input type="text" id="solicitante-device" name="device" required class="input-field">
+
+                <!-- Campo para la descripción del dispositivo solicitado -->
+                <label for="solicitante-description">Descripción del Dispositivo Solicitado:</label>
+                <textarea id="solicitante-description" name="description" rows="5" required class="input-field"></textarea>
+
+                <!-- Campo para las condiciones del dispositivo solicitado -->
+                <label for="solicitante-condition">Condiciones del Dispositivo Solicitado:</label>
+                <input type="text" id="solicitante-condition" name="condition" required class="input-field">
+
+                <!-- Campo para la dirección de entrega del dispositivo solicitado -->
+                <label for="solicitante-address">Dirección de Entrega:</label>
+                <input type="text" id="solicitante-address" name="address" required class="input-field">
+
+                <!-- Botón para enviar la solicitud -->
+                <input type="button" value="Enviar Solicitud" onclick="mesajoss()">
+                <p id="carlitoss"></p>
+        </div>
+    </div>
+
+    <!-- Pie de página con derechos de autor -->
+    <footer>
+        <p>&copy; 2024 RecicladosTech - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
